@@ -8,7 +8,7 @@ export class ProductController {
 
   @Get()
   @ApiResponse({})
-  async findAll() {
+  findAll() {
     return this.productService.findAll();
   }
 }
