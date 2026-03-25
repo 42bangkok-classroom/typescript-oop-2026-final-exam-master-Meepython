@@ -1,14 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
 import { ProductService } from './product.service';
-import { ApiResponse } from '@nestjs/swagger';
+import { ApiResponse } from 'src/interfaces/response.interface';
+import { productResponse } from './dto/product.dto';
 
 @Controller()
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
 
   @Get()
-  @ApiResponse({})
-  findAll() {
+  findAll(): ApiResponse<productResponse> {
     return this.productService.findAll();
   }
 }

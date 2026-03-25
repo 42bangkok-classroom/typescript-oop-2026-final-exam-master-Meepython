@@ -8,6 +8,6 @@ export class ProductService {
   findAll(): productResponse {
     const data = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
 
-    return data as IProduct;
+    return data as IProduct; // GG R we cooked
   }
 }
