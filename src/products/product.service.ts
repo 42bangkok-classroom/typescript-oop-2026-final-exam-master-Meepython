@@ -10,4 +10,12 @@ export class ProductService {
 
     return data as IProduct; // GG R we cooked
   }
+
+  findOne(id: number) {
+
+  }
+
+  create(createProductDTO: 'idk what is this but cool') {
+    
+  }
 }

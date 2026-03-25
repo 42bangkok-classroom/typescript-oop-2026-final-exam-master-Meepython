@@ -4,6 +4,6 @@ import { ApiResponse } from './interfaces/response.interface';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello NestJS';
+    return { data: [{ id: 1, name: 'John Doe' }], message: 'Users fetched' };;
   }
 }
